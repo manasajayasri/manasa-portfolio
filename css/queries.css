@@ -1,0 +1,112 @@
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Ensure the toggle button is visible on small screens */
+  }
+
+  .main-nav {
+    position: relative; /* Establishes a positioning context for absolute children */
+  }
+
+  .main-nav-list {
+    position: absolute; /* Absolutely positions the menu */
+    top: 100%; /* Aligns directly below the navbar */
+    right: 0;
+    display: none; /* Hidden by default */
+    background-color: #f3e4ce; /* Matches the header background */
+    flex-direction: column; /* Stacks the links vertically */
+    width: 100%; /* Ensures it spans the full width */
+    z-index: 999; /* Ensures the menu is on top of other content */
+  }
+
+  .main-nav-list.active {
+    display: flex; /* Display as a flexbox when active */
+    align-items: flex-end; /* Centers items vertically */
+    padding: 1em; /* Padding to not touch the edges directly */
+  }
+
+  .main-nav-link {
+    text-align: center; /* Centers text within links */
+    padding: 10px; /* Padding for touch targets */
+    width: 100%; /* Full width for each link */
+    border-bottom: 1px solid #ccc; /* Separates items visually */
+  }
+
+  .main-nav-link:last-child {
+    border-bottom: none; /* Removes border from the last item */
+  }
+
+  .main-intro {
+    font-size: 2em; /* Smaller font size on small screens */
+    padding: 3em 0; /* Adjust padding around the intro text */
+    line-height: 1.2; /* Adjust line height for better readability */
+  }
+
+  .main-head {
+    height: auto; /* Adjust height setting for smaller screens */
+    padding: 20px; /* Add padding around main content area */
+  }
+  .main-interests {
+    flex-direction: row; /* Stack title and text vertically */
+    align-items: center; /* Center-align the items */
+    height: auto; /* Allow container to expand as needed */
+    padding: 1em 0; /* Add some vertical padding */
+  }
+
+  .interests-title {
+    margin-bottom: 0.5em; /* Add some space below the title */
+    text-align: center; /* Ensure title is centered */
+  }
+
+  .interests-text {
+    padding: 0 1em; /* Add padding around the text for better readability */
+    text-align: center; /* Center-align the text */
+    font-size: 1.2em; /* Optionally reduce the font size for space */
+  }
+  .main-about {
+    flex-direction: column; /* Stack image and content vertically */
+    padding: 2em; /* Uniform padding */
+    align-items: center; /* Center-align content for a balanced look */
+  }
+
+  .about-img,
+  .about-content {
+    width: 100%; /* Full width for both image and content */
+    padding: 0; /* Remove additional padding */
+  }
+
+  .about-img img {
+    max-width: 100%; /* Ensures image does not overflow */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Slight rounding of corners */
+  }
+
+  .about-title {
+    text-align: center; /* Center the title */
+    font-size: 1.8em; /* Slightly smaller font size for smaller screens */
+  }
+
+  .about-bio {
+    text-align: justify; /* Keeps text justified for better readability */
+    font-size: 1em; /* Suitable font size for easier reading */
+  }
+
+  .portfolio-section {
+    padding: 4em; /* Reduce padding for smaller screens */
+  }
+
+  .portfolio-grid {
+    flex-direction: column; /* Stack the portfolio items vertically */
+    gap: 10px; /* Reduce the gap between items */
+  }
+
+  .portfolio-item {
+    width: 90%; /* Adjust width to fit smaller screens */
+    height: auto; /* Let height adjust dynamically */
+    margin: 0 auto; /* Center items horizontally */
+  }
+
+  .portfolio-section h2 {
+    font-size: 1.6em; /* Adjust heading size */
+    margin-bottom: 2em; /* Adjust spacing below the heading */
+  }
+}

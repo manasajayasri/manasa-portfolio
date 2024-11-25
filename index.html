@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Rubik:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- title of site -->
+    <title>Manasa • Portfolio</title>
+
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="images/favicon.png" />
+
+    <!--style.css-->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <h3 class="page-title"><a href="#"> Manasa Jayasri</a></h3>
+
+      <nav class="main-nav">
+        <!-- SVG Hamburger Menu Icon -->
+        <svg
+          class="menu-toggle"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          onclick="toggleMenu()"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">About</a></li>
+          <li><a class="main-nav-link" href="#meals">Projects</a></li>
+          <li><a class="main-nav-link" href="#testimonials">Education</a></li>
+          <li><a class="main-nav-link" href="#pricing">Experience</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- MAIN INTRO SECTION -->
+      <div class="main-head">
+        <div class="main-intro">
+          Hi there, I am a
+          <br />
+          computer science major
+          <br />
+          at University of Wisconsin
+        </div>
+      </div>
+
+      <!-- MAIN INTERESTS SECTION -->
+      <hr class="page-breaker" />
+      <div class="main-interests">
+        <h3 class="interests-title">Interests</h3>
+        <div class="interests-text">
+          <p>System Design, AWS, Web development, Game development, UI/UX</p>
+        </div>
+      </div>
+      <hr class="page-breaker" />
+
+      <!-- MAIN ABOUT SECTION -->
+      <div class="main-about">
+        <div class="about-img">
+          <img
+            src="images/me.JPEG"
+            alt="Manasa Jayasri"
+            width="500"
+            height="500"
+          />
+        </div>
+        <div class="about-content">
+          <h3 class="about-title">About Me</h3>
+          <p class="about-bio">
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Facere ab repudiandae dicta mollitia magnam?
+            Similique. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Unde voluptates deleniti nostrum explicabo sint soluta consectetur
+            quo provident iusto, dolore optio eveniet! Nulla perspiciatis
+            cupiditate quis hic? Eum, suscipit modi?
+          </p>
+        </div>
+      </div>
+
+      <hr class="page-breaker" />
+
+      <!-- Portfolio Section -->
+      <div class="portfolio-section">
+        <h2>Selected Projects</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <div class="portfolio-overlay">
+              <img
+                src="images/github-mark.png"
+                alt="GitHub link"
+                width="15"
+                height="15"
+              />
+              <a
+                href="https://github.com/manasajayasri/SiteBlocker-chrome-extension"
+              >
+                SiteBlocker - A chrome extension</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-overlay">
+              <img
+                src="images/github-mark.png"
+                alt="GitHub link"
+                width="15"
+                height="15"
+              />
+              <a href="https://github.com/manasajayasri/AudioBook">
+                AudioBook</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-overlay">
+              <img
+                src="images/github-mark.png"
+                alt="GitHub link"
+                width="15"
+                height="15"
+              />
+              <a href="https://github.com/manasajayasri/BeatSaber-clone-Godot">
+                BeatSaber clone Godot</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-overlay">
+              <img
+                src="images/github-mark.png"
+                alt="GitHub link"
+                width="15"
+                height="15"
+              />
+              <a href="https://github.com/manasajayasri/Multi-Cloud-Infra">
+                Multi-Cloud Infrastructure</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="page-breaker" />
+    </main>
+
+    <script>
+      function toggleMenu() {
+        var nav = document.querySelector(".main-nav-list");
+        nav.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
