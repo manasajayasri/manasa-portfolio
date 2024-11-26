@@ -109,4 +109,32 @@
     font-size: 1.6em; /* Adjust heading size */
     margin-bottom: 2em; /* Adjust spacing below the heading */
   }
+
+  .edu-section {
+    grid-template-columns: 1fr; /* Stacks items vertically */
+    justify-content: start; /* Aligns items to the left */
+  }
+
+  .gird-item {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .main-edu {
+    padding: 5em; /* Reduce overall padding for smaller screens */
+
+  }
+
+  .exp-section {
+    grid-template-columns: 1fr; /* Stacks items vertically */
+    justify-content: start; /* Aligns items to the left */
+  }
+
+  .ex.gird-item {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .main-exp {
+    padding: 5em; /* Reduce overall padding for smaller screens */
+
+  }
 }
