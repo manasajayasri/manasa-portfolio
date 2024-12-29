@@ -1,3 +1,4 @@
+/* For small screens (phones and smaller tablets) */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -35,6 +36,7 @@
     border-bottom: none;
   }
 
+  /* Adjustments for introduction section */
   .main-intro {
     font-size: 2em;
     padding: 3em 0;
@@ -45,6 +47,8 @@
     height: auto;
     padding: 20px;
   }
+
+  /* Adjustments for interests section */
   .main-interests {
     flex-direction: row;
     align-items: center;
@@ -62,6 +66,8 @@
     text-align: center;
     font-size: 1.2em;
   }
+
+  /* Adjustments for about section */
   .main-about {
     flex-direction: column;
     padding: 2em;
@@ -90,8 +96,9 @@
     font-size: 1em;
   }
 
+  /* Adjustments for portfolio section */
   .portfolio-section {
-    padding: 4em;
+    padding: 2em;
   }
 
   .portfolio-grid {
@@ -112,6 +119,7 @@
     margin-bottom: 2em;
   }
 
+  /* Adjustments for education section */
   .edu-section {
     grid-template-columns: 1fr;
     justify-content: start;
@@ -123,11 +131,12 @@
   }
 
   .main-edu {
-    padding: 4em;
-    margin-bottom: 18em;
+    padding: 2em;
+    margin-bottom: 10em;
   }
 }
 
+/* For medium screens (tablets and smaller laptops) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .portfolio-grid {
     flex-direction: row;
@@ -138,5 +147,14 @@
   .portfolio-item {
     width: 45%; /* Two items per row */
     margin: 0 auto;
+  }
+
+  .portfolio-section {
+    padding: 4em;
+  }
+
+  .edu-section {
+    grid-template-columns: 1fr 1fr; /* Two columns for better spacing */
+    gap: 20px;
   }
 }
