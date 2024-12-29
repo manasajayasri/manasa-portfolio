@@ -38,7 +38,7 @@
 
   /* Adjustments for introduction section */
   .main-intro {
-    font-size: 2em;
+    font-size: 1em;
     padding: 3em 0;
     line-height: 1.2;
   }
@@ -108,7 +108,7 @@
 
   .portfolio-item {
     width: 90%;
-    height: auto;
+    height: 30px;
     max-width: 350px;
     margin: 0 auto;
     text-align: center;
@@ -188,5 +188,42 @@
     margin-top: 5em;
     padding: 3em; /* Reduce padding for better layout */
     margin-bottom: 12em;
+  }
+}
+
+/* For screens with width of 952px */
+@media (max-width: 952px) and (min-height: 1126px) {
+  .portfolio-grid {
+    flex-direction: column; /* Stack items vertically */
+    gap: 25px; /* Adjust spacing between items */
+    padding: 2em 0; /* Reduce padding for smaller screens */
+  }
+
+  .portfolio-item {
+    width: 80%; /* Adjust width for better fit */
+    max-width: 400px; /* Limit the width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the items */
+    text-align: center; /* Ensure text alignment */
+  }
+
+  .portfolio-section h2 {
+    font-size: 1.8em; /* Adjust heading size */
+    margin-bottom: 1.5em; /* Reduce bottom margin */
+  }
+
+  .edu-section {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 15px; /* Reduce spacing between items */
+  }
+
+  .gird-item {
+    padding: 10px; /* Adjust padding for better fit */
+    text-align: center; /* Center-align education items */
+  }
+
+  .main-edu {
+    padding: 2em; /* Adjust padding for education section */
+    margin-bottom: 8em; /* Reduce bottom margin */
   }
 }

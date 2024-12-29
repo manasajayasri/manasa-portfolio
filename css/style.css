@@ -105,7 +105,7 @@ body::after {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-left: 1em;
   color: #000;
   text-transform: uppercase;
@@ -153,7 +153,7 @@ body::after {
 
 .main-intro {
   font-family: "Cormorant Garamond", serif !important;
-  font-size: 3.2em !important;
+  font-size: 3.2em;
   text-align: center;
   text-transform: uppercase;
   padding: 6em 0 0 1em;
@@ -241,7 +241,7 @@ body::after {
 
 .portfolio-item {
   width: 250px;
-  height: 150px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
