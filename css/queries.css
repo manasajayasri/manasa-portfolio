@@ -127,3 +127,16 @@
     margin-bottom: 18em;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .portfolio-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .portfolio-item {
+    width: 45%; /* Two items per row */
+    margin: 0 auto;
+  }
+}
