@@ -158,3 +158,35 @@
     gap: 20px;
   }
 }
+
+/* For medium screens (laptops and wider tablets) */
+@media (min-width: 1025px) and (max-width: 1399px) {
+  .portfolio-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly; /* Better alignment for grid items */
+  }
+
+  .portfolio-item {
+    width: 22%; /* Four items in a row */
+    height: auto;
+    text-align: center;
+  }
+
+  .portfolio-section {
+    margin-bottom: 5em;
+    padding: 5em; /* Adjust padding for medium screens */
+  }
+
+  .edu-section {
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout for education */
+    gap: 30px; /* Add spacing between columns */
+  }
+
+  .main-edu {
+    margin-top: 5em;
+    padding: 3em; /* Reduce padding for better layout */
+    margin-bottom: 12em;
+  }
+}

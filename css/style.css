@@ -154,7 +154,8 @@ body::after {
 
 .portfolio-section {
   height: 30vh;
-  padding: 10em;
+  padding: 5em 2em;
+  margin-bottom: 4em;
 }
 
 .portfolio-grid {
@@ -188,13 +189,17 @@ body::after {
 
 .main-edu {
   height: 60vh;
-  padding: 6em;
+  padding: 4em 2em;
+  margin-top: 4em; 
+  margin-bottom: 8em;
+  min-height: auto;
 }
 
 .edu-section {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
+  gap: 2em;
 }
 
 .gird-item {
