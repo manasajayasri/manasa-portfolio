@@ -1,4 +1,3 @@
-/* For small screens (phones and smaller tablets) */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -36,9 +35,8 @@
     border-bottom: none;
   }
 
-  /* Adjustments for introduction section */
   .main-intro {
-    font-size: 1em;
+    font-size: 2.8em;
     padding: 3em 0;
     line-height: 1.2;
   }
@@ -48,7 +46,6 @@
     padding: 20px;
   }
 
-  /* Adjustments for interests section */
   .main-interests {
     flex-direction: row;
     align-items: center;
@@ -64,10 +61,9 @@
   .interests-text {
     padding: 0 1em;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
-  /* Adjustments for about section */
   .main-about {
     flex-direction: column;
     padding: 2em;
@@ -96,7 +92,6 @@
     font-size: 1em;
   }
 
-  /* Adjustments for portfolio section */
   .portfolio-section {
     padding: 2em;
   }
@@ -108,7 +103,7 @@
 
   .portfolio-item {
     width: 90%;
-    height: 30px;
+    height: 40px;
     max-width: 350px;
     margin: 0 auto;
     text-align: center;
@@ -119,7 +114,6 @@
     margin-bottom: 2em;
   }
 
-  /* Adjustments for education section */
   .edu-section {
     grid-template-columns: 1fr;
     justify-content: start;
@@ -132,11 +126,9 @@
 
   .main-edu {
     padding: 2em;
-    margin-bottom: 10em;
   }
 }
 
-/* For medium screens (tablets and smaller laptops) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .portfolio-grid {
     flex-direction: row;
@@ -145,7 +137,7 @@
   }
 
   .portfolio-item {
-    width: 45%; /* Two items per row */
+    width: 45%;
     margin: 0 auto;
   }
 
@@ -154,76 +146,81 @@
   }
 
   .edu-section {
-    grid-template-columns: 1fr 1fr; /* Two columns for better spacing */
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 }
 
-/* For medium screens (laptops and wider tablets) */
 @media (min-width: 1025px) and (max-width: 1399px) {
   .portfolio-grid {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-evenly; /* Better alignment for grid items */
+    justify-content: space-evenly;
   }
 
   .portfolio-item {
-    width: 22%; /* Four items in a row */
+    width: 22%;
     height: auto;
     text-align: center;
   }
 
   .portfolio-section {
     margin-bottom: 5em;
-    padding: 5em; /* Adjust padding for medium screens */
+    padding: 5em;
   }
 
   .edu-section {
-    grid-template-columns: repeat(2, 1fr); /* Two-column layout for education */
-    gap: 30px; /* Add spacing between columns */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
   .main-edu {
+    padding: 6em;
+  }
+
+  .main-exp {
     margin-top: 5em;
-    padding: 3em; /* Reduce padding for better layout */
-    margin-bottom: 12em;
+    padding: 3em;
   }
 }
 
-/* For screens with width of 952px */
 @media (max-width: 952px) and (min-height: 1126px) {
   .portfolio-grid {
-    flex-direction: column; /* Stack items vertically */
-    gap: 25px; /* Adjust spacing between items */
-    padding: 2em 0; /* Reduce padding for smaller screens */
+    flex-direction: column;
+    gap: 25px;
+    padding: 2em 0;
   }
 
   .portfolio-item {
-    width: 80%; /* Adjust width for better fit */
-    max-width: 400px; /* Limit the width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center the items */
-    text-align: center; /* Ensure text alignment */
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .portfolio-section h2 {
-    font-size: 1.8em; /* Adjust heading size */
-    margin-bottom: 1.5em; /* Reduce bottom margin */
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
   }
 
   .edu-section {
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 15px; /* Reduce spacing between items */
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .gird-item {
-    padding: 10px; /* Adjust padding for better fit */
-    text-align: center; /* Center-align education items */
+    padding: 10px;
+    text-align: center;
   }
 
   .main-edu {
-    padding: 2em; /* Adjust padding for education section */
-    margin-bottom: 8em; /* Reduce bottom margin */
+    padding: 2em;
+  }
+
+  .main-exp {
+    margin-top: 5em;
+    padding: 3em;
   }
 }
