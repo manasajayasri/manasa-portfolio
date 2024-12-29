@@ -309,15 +309,6 @@ body::after {
 .main-exp {
   padding: 6em;
   min-height: auto;
-  padding-top: 4em;
-  padding-bottom: 2em;
-}
-
-.exp-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
-  gap: 2em;
 }
 
 /* SOCIAL BUTTONS SECTION Styling */
