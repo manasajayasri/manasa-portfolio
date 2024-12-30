@@ -268,7 +268,7 @@ body::after {
 }
 
 .portfolio-item {
-  width: 250px;
+  width: 235px;
   height: 250px;
   display: flex;
   align-items: center;
@@ -276,11 +276,19 @@ body::after {
   border-radius: 10px;
   border: 2px #000 solid;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
 }
 
 .portfolio-item a {
   text-decoration: none;
   color: #000;
+}
+
+.portfolio-item p {
+  text-align: center;
+  font-size: 0.8em;
 }
 
 .portfolio-overlay:hover {

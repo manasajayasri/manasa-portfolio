@@ -102,11 +102,17 @@
   }
 
   .portfolio-item {
-    width: 90%;
-    height: 40px;
+    width: 100%;
+    height: auto;
     max-width: 350px;
     margin: 0 auto;
     text-align: center;
+    padding: 1em;
+    border: 1px solid #000;
+  }
+
+  .portfolio-item p {
+    font-size: 0.9em; 
   }
 
   .portfolio-section h2 {
