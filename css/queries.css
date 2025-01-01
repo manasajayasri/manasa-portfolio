@@ -93,19 +93,22 @@
   }
 
   .portfolio-section {
-    padding: 15%;
+    padding: 10%;
     align-items: center;
+    justify-content: center;
   }
 
   .portfolio-block {
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   .portfolio-item {
     width: 100%;
     height: auto;
-    max-width: 350px;
+    max-width: 85%;
     margin: 0 auto;
     text-align: center;
     padding: 1em;
@@ -113,7 +116,7 @@
   }
 
   .portfolio-item p {
-    font-size: 0.9em; 
+    font-size: 0.9em;
   }
 
   .portfolio-section h2 {
@@ -141,6 +144,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
+    align-items: center;
+    justify-content: center;
   }
 
   .portfolio-item {
@@ -151,7 +156,7 @@
   .portfolio-section {
     padding: 15%;
     align-items: center;
-   }
+  }
 
   .edu-section {
     grid-template-columns: 1fr 1fr;
@@ -165,6 +170,7 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-evenly;
+    align-items: center;
   }
 
   .portfolio-item {
@@ -199,6 +205,7 @@
     flex-direction: column;
     gap: 25px;
     padding: 2em 0;
+    align-items: center;
   }
 
   .portfolio-item {
@@ -209,7 +216,7 @@
     text-align: center;
   }
 
-  .portfolio-section{
+  .portfolio-section {
     padding: 15%;
     align-items: center;
   }
