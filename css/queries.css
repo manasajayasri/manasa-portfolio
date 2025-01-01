@@ -1,4 +1,17 @@
 @media (max-width: 768px) {
+  #myBtn {
+    bottom: 10px;
+    right: 15px;
+    padding: 10px;
+    font-size: 0.8em;
+    border-radius: 3px;
+  }
+
+  #myBtn:hover {
+    background-color: #444;
+    color: #fff;
+  }
+
   .menu-toggle {
     display: block;
   }

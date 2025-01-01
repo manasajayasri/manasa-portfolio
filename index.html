@@ -31,6 +31,9 @@
     <link rel="stylesheet" href="css/queries.css" />
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <!-- HEADER -->
     <header class="header">
       <h3 class="page-title"><a href="#"> Manasa Jayasri</a></h3>
@@ -444,6 +447,28 @@
       function toggleMenu() {
         var nav = document.querySelector(".main-nav-list");
         nav.classList.toggle("active");
+      }
+
+      let mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
       }
     </script>
   </body>
