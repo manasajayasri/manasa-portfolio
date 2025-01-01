@@ -260,7 +260,7 @@ body::after {
   margin-bottom: 4em;
 }
 
-.portfolio-grid {
+.portfolio-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -268,8 +268,8 @@ body::after {
 }
 
 .portfolio-item {
-  width: 235px;
-  height: 250px;
+  width: 250px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,10 +313,20 @@ body::after {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.main-edu ul a {
+  text-decoration: underline;
+  color: #000;
+}
+
 /* EXPERIENCE SECTION Styling */
 .main-exp {
   padding: 3em;
   min-height: auto;
+}
+
+.main-exp ul a{
+  text-decoration: underline;
+  color: #000;
 }
 
 /* SOCIAL BUTTONS SECTION Styling */
